@@ -1,0 +1,18 @@
+server:
+  port: 8222
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: parking-main
+          uri: lb:http://parking-main
+          predicates:
+            - Path=/smart/parking/**
+        - id: smart-finance
+          uri: lb:http://smart-finance
+          predicates:
+            - Path=/smart/finance/**
+       
