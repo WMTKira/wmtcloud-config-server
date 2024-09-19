@@ -11,8 +11,18 @@ spring:
           uri: lb:http://parking-main
           predicates:
             - Path=/smart/parking/**
+          filters:
+            - AuthenticationFilter
         - id: smart-finance
           uri: lb:http://smart-finance
           predicates:
             - Path=/smart/finance/**
+          filters:
+            - AuthenticationFilter
+        - id: smart-user
+          uri: lb:http://smart-user
+          predicates:
+            - Path=/smart/user/**
+          filters:
+            - AuthenticationFilter
        
