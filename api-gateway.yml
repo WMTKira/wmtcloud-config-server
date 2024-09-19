@@ -25,4 +25,5 @@ spring:
             - Path=/smart/user/**
           filters:
             - AuthenticationFilter
-key.token: WMT0217380917746215000000000000000111111998KK
+key:
+  token: WMT0217380917746215000000000000000111111998KK
