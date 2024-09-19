@@ -9,5 +9,6 @@ spring:
 
 mybatis:
   mapper-locations: classpath:/mapper/*.xml
-
-key.token: WMT0217380917746215000000000000000111111998KK
+  
+key:
+  token: WMT0217380917746215000000000000000111111998KK
